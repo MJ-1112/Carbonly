@@ -77,6 +77,145 @@ const HeroSection = () => {
               />
             </div>
           </div>
+
+          {/* Three Cards Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
+            {/* Growers Card */}
+            <div className="bg-white border-2 border-purple-300 rounded-lg p-6 text-left">
+              <div className="w-8 h-8 mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="m2 17 10 5 10-5"/>
+                  <path d="m2 12 10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Growers</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Plant trees and be paid for carbon they drawdown, then sell carbon tokens to individuals and organisations.
+              </p>
+              <button className="text-sm font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                Become a grower →
+              </button>
+            </div>
+
+            {/* Individuals and Organisations Card */}
+            <div className="bg-white border-2 border-gray-900 rounded-lg p-6 text-left">
+              <div className="w-8 h-8 mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
+                  <rect x="3" y="3" width="7" height="7"/>
+                  <rect x="14" y="3" width="7" height="7"/>
+                  <rect x="14" y="14" width="7" height="7"/>
+                  <rect x="3" y="14" width="7" height="7"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Individuals and Organisations</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Transparent and verified, Carbonly is an easy way to fulfil and commitment to sustainability
+              </p>
+              <button className="text-sm font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                Purchase carbonly →
+              </button>
+            </div>
+
+            {/* Planet & Humanity Card */}
+            <div className="bg-white border-2 border-cyan-300 rounded-lg p-6 text-left">
+              <div className="w-8 h-8 mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m4.93 4.93 4.24 4.24"/>
+                  <path d="m14.83 9.17 4.24-4.24"/>
+                  <path d="m14.83 14.83 4.24 4.24"/>
+                  <path d="m9.17 14.83-4.24 4.24"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Planet & Humanity</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Making reforestation profitable is great for Earth. Using carbon storage as a proof of work means carbonly tokens are backed by productivity.
+              </p>
+              <button className="text-sm font-medium text-gray-900 hover:text-gray-700 transition-colors">
+                What drives Carbonly? →
+              </button>
+            </div>
+          </div>
+          {/* Why it matters button */}
+          <div className="mt-12">
+            <button className="px-8 py-3 bg-white border-2 border-gray-900 text-gray-900 rounded-full hover:bg-gray-50 transition-colors font-medium">
+              Why it matters?
+            </button>
+          </div>
+
+          {/* Quote Section */}
+          <div className="mt-16 bg-white border-4 border-cyan-400 rounded-3xl p-4 md:p-8 mx-auto relative w-full max-w-6xl" style={{ minHeight: '400px' }}>
+            <div className="relative z-10 h-full flex flex-col justify-center">
+              {/* Quote */}
+              <blockquote className="text-center mb-6">
+                <p className="text-2xl md:text-3xl font-medium text-gray-900 leading-tight mb-4">
+                  "To date, there's a{' '}
+                  <span className="text-cyan-500 font-semibold">complete lack</span>
+                  <br />
+                  <span className="text-purple-500 font-semibold">of grassroots incentives</span>{' '}
+                  to resolve
+                  <br />
+                  the challenges of reforestation."
+                </p>
+                <cite className="text-sm text-gray-600 font-medium">-The carbonly founders</cite>
+              </blockquote>
+
+              {/* Subtitle */}
+              <p className="text-center text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                We believe people will take better care of the environment if they can profit from their efforts.
+              </p>
+
+              {/* Solution section */}
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-6">The solution must be:</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {/* Transparent Card */}
+                  <div className="bg-gradient-to-br from-cyan-200 to-blue-300 border-2 border-blue-400 rounded-lg p-6">
+                    <div className="w-8 h-8 mb-4">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full text-blue-700">
+                        <rect x="3" y="3" width="18" height="12" rx="2" ry="2"/>
+                        <line x1="9" y1="9" x2="15" y2="9"/>
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-3">Transparent</h4>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      Every treecoin is backed by data showing where the carbon was captured. Grower's project is visible on the map. Check it out below.
+                    </p>
+                  </div>
+
+                  {/* Verifiable Card */}
+                  <div className="bg-gray-100 border-2 border-gray-400 rounded-lg p-6">
+                    <div className="w-8 h-8 mb-4">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full text-gray-700">
+                        <rect x="3" y="3" width="18" height="12" rx="2" ry="2"/>
+                        <line x1="9" y1="9" x2="15" y2="9"/>
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-3">Verifiable</h4>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      Each project is verified with industry leading AI carbon auditing technology using satellite data.
+                    </p>
+                  </div>
+
+                  {/* Valuable Card */}
+                  <div className="bg-gray-100 border-2 border-cyan-400 rounded-lg p-6">
+                    <div className="w-8 h-8 mb-4">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full text-cyan-700">
+                        <rect x="3" y="3" width="18" height="12" rx="2" ry="2"/>
+                        <line x1="9" y1="9" x2="15" y2="9"/>
+                      </svg>
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Valuable</h4>
+                    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                      Each treecoin is equal to one tonne of carbon drawn out of the atmosphere.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
